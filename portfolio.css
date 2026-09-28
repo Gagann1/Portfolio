@@ -1,9 +1,6 @@
-/* =========================
-   RESET
-========================= */
 * {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -11,8 +8,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background: #0f0f0f;
-    color: #fff;
-    line-height: 1.6;
+    color:white;
 }
 
 a {
@@ -33,21 +29,17 @@ section {
 }
 
 button {
-    border: none;
-    cursor: pointer;
     background: #b00b69;
     color: white;
-    padding: 14px;
+    border: none;
     border-radius: 8px;
-    font-size: 15px;
+    padding: 14px;
     margin-bottom: 50px;
+    font-size: 15px;
     font-family: inherit;
+    cursor: pointer;
 }
 
-
-/* =========================
-   HEADER
-========================= */
 header {
     position: sticky;
     top: 0;
@@ -63,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 100px;
-    padding: 20px 25px;
+    padding: 20px;
 }
 
 nav span {
@@ -88,9 +80,6 @@ nav span {
     transform: translateY(-5px);
 }
 
-/*=========================
-   SECTION COMMON
-===========================*/
 .section{
     h1 {
     color: #b00b69;
@@ -108,22 +97,18 @@ nav span {
         color:blue;
     }
     .blr{
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 0));
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 0)); /*AI*/
     background-clip: text;
     color: transparent;
     }
 }
 
-
-/* =========================
-   HOME SECTION
-========================= */
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
     margin: auto;
-    padding: 40px 60px;
+    padding: 60px;
     align-items: center;
 }
 
@@ -133,8 +118,6 @@ nav span {
     text-align: center;
 }
 
-
-/* Profile picture */
 .card1 {
     display: flex;
     justify-content: center;
@@ -148,8 +131,6 @@ nav span {
     border: 5px solid #b00b69;
 }
 
-
-/* Right card */
 .card2 {
     padding: 50px;
 }
@@ -161,21 +142,18 @@ p {
 }
 .rainbow {
     padding: 8px 15px;
-    color: #fff;
+    color: white;
     font-weight: 700;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
-/* =========================
-   SKILLS
-========================= */
 .scontainer{
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 .scard{
     background: #181818;
@@ -191,13 +169,9 @@ p {
 }
 .skill-button {
     margin-top: 50px;
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /*AI*/
     justify-self: center;
 }
-
-/* =========================
-           EDUCATION
-========================= */
 
 .econtainer {
     max-width: 750px;
@@ -209,7 +183,7 @@ p {
     padding-bottom: 40px;
     position: relative;
 }
-.ecard::before {
+.ecard::before {  /*AI*/
     content: "";
     width: 12px;
     height: 12px;
@@ -223,10 +197,6 @@ p {
     color: #b00b69;
     font-size: 14px;
 }
-
-/* =========================
-           CONTACT
-========================= */
 .ccontainer {
     max-width: 700px;
     margin: auto;
@@ -261,13 +231,10 @@ textarea {
     resize: vertical;
 }
 
-/*================================
-            FOOTER 
-================================*/
 footer {
     border-top: 1px solid #252525;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px;
     color: #777777;
 }
 .socials {
@@ -279,14 +246,7 @@ footer {
 .socials a:hover {
     color: #b00b69;
 }
-/*=========================
-                AI
-==========================*/
-
-/* =========================
-   TABLET
-========================= */
-
+/*GOOGLE*/
 @media (max-width: 1024px) {
 
     .nav {
@@ -324,14 +284,7 @@ footer {
 
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 767px) {
-
-    /* HEADER */
 
     .nav {
         flex-direction: column;
@@ -353,9 +306,6 @@ footer {
         font-size: 21px;
     }
 
-
-    /* GENERAL SECTIONS */
-
     .section h1 {
         font-size: 36px;
     }
@@ -363,9 +313,6 @@ footer {
     .section p {
         font-size: 18px;
     }
-
-
-    /* HOME */
 
     .container {
         grid-template-columns: 1fr;
@@ -392,9 +339,6 @@ footer {
         font-size: 21px;
     }
 
-
-    /* SKILLS */
-
     .scontainer {
         grid-template-columns: 1fr;
         margin: 0 20px;
@@ -409,9 +353,6 @@ footer {
         margin-top: 25px;
     }
 
-
-    /* EDUCATION */
-
     .econtainer {
         margin: 0 20px;
     }
@@ -420,9 +361,6 @@ footer {
         padding-left: 20px;
         padding-bottom: 30px;
     }
-
-
-    /* CONTACT */
 
     .ccontainer {
         margin: 0 20px;
@@ -437,9 +375,6 @@ footer {
         font-size: 14px;
     }
 
-
-    /* FOOTER */
-
     footer {
         padding: 25px 15px;
     }
@@ -449,11 +384,6 @@ footer {
         flex-wrap: wrap;
     }
 }
-
-
-/* =========================
-   SMALL PHONES
-========================= */
 
 @media (max-width: 480px) {
 
